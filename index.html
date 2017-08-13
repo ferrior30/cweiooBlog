@@ -61,6 +61,125 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-DOM操作" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2017/08/13/DOM操作/" class="article-date">
+  <time datetime="2017-08-13T10:04:16.000Z" itemprop="datePublished">2017-08-13</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/08/13/DOM操作/">springboot</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="DOM操作"><a href="#DOM操作" class="headerlink" title="DOM操作"></a>DOM操作</h1><h2 id="内部插入"><a href="#内部插入" class="headerlink" title="内部插入"></a>内部插入</h2><ul>
+<li>append(content)</li>
+<li>appendTo(content)</li>
+<li>prepend(content)</li>
+<li>prependTo(content)</li>
+</ul>
+<h2 id="外部插入"><a href="#外部插入" class="headerlink" title="外部插入"></a>外部插入</h2><ul>
+<li>after(content)</li>
+<li>after(function)</li>
+<li>before(content)</li>
+<li>before(function)</li>
+<li>insertBefore(content)</li>
+<li>insertAfter(content)</li>
+</ul>
+<h2 id="删除节点"><a href="#删除节点" class="headerlink" title="删除节点"></a>删除节点</h2><ul>
+<li>empty()</li>
+<li>remove([expr])</li>
+<li>detach([expr])<ul>
+<li>区别: 属性方式绑定的事件,remove方式的没了,datach还在. onclick=”clickMe”</li>
+<li>DOM对象从文档中移除了,还在内存中</li>
+</ul>
+</li>
+</ul>
+<h2 id="clone"><a href="#clone" class="headerlink" title="clone"></a>clone</h2><ul>
+<li>clone</li>
+<li>clone(true)<ul>
+<li>在js中加的事件也会复制过去. <h2 id="插件-spekt"><a href="#插件-spekt" class="headerlink" title="插件 spekt"></a>插件 spekt</h2></li>
+</ul>
+</li>
+</ul>
+<p><img src="media/14902350356312/Snip20170323_18.png" alt="Snip20170323_18"></p>
+<h1 id="异常"><a href="#异常" class="headerlink" title="异常"></a>异常</h1><h2 id="过滤选择没结果"><a href="#过滤选择没结果" class="headerlink" title="过滤选择没结果"></a>过滤选择没结果</h2><ul>
+<li>语法不正确, option 前没有空格.</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">function sel1AddTosel2(src,target) &#123;</div><div class="line">    console.debug($(&quot;#&quot; + target));</div><div class="line">    $(&quot;#&quot;+src + &quot; option:selected&quot;).appendTo($(&quot;#select2&quot;));</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2017/08/13/DOM操作/" data-id="cj6al5mv9000092y5xi7ofcwj" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-jstl-function" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2017/08/13/jstl-function/" class="article-date">
+  <time datetime="2017-08-13T10:04:16.000Z" itemprop="datePublished">2017-08-13</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/08/13/jstl-function/">springboot</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="自定义函数库-Fn-tld"><a href="#自定义函数库-Fn-tld" class="headerlink" title="自定义函数库 Fn tld"></a>自定义函数库 Fn tld</h1><ol>
+<li>uri: 域名要正确 com.cweioo.crm  -&gt; <a href="http://cweioo.com/crm/后面可以乱写/functions" target="_blank" rel="external">http://cweioo.com/crm/后面可以乱写/functions</a></li>
+<li>functions不能乱写.不可更改</li>
+<li>crm/ 和functions中间可以随便加路径</li>
+<li>放在web-inf下新建的tld文件夹下即可 </li>
+</ol>
+<h2 id="步骤"><a href="#步骤" class="headerlink" title="步骤"></a>步骤</h2><ul>
+<li>复制fn.tld文件过来,改文件名,并只保留一个函数,在上面修改<br><img src="media/14938028885062/Snip20170503_13.png" alt="Snip20170503_13"></li>
+</ul>
+<p><img src="media/14938028885062/14938078635580.jpg" alt=""></p>
+<p><img src="media/14938028885062/14938078931416.jpg" alt=""></p>
+<p><img src="media/14938028885062/14938079057145.jpg" alt=""></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2017/08/13/jstl-function/" data-id="cj6al5mvh000292y5nxww5yid" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
     <article id="post-springboot" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2017/08/13/springboot/" class="article-date">
@@ -88,7 +207,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/08/13/springboot/" data-id="cj6aksuiw000487y5rrg3j96n" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2017/08/13/springboot/" data-id="cj6al5mvu000392y5nqktjvsd" class="article-share-link">Share</a>
       
       
     </footer>
@@ -133,167 +252,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/08/13/hello-world/" data-id="cj6aksuir000287y5ljw3ymg2" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-jstl-function" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2017/05/03/jstl-function/" class="article-date">
-  <time datetime="2017-05-03T09:14:48.000Z" itemprop="datePublished">2017-05-03</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="自定义函数库-Fn-tld"><a href="#自定义函数库-Fn-tld" class="headerlink" title="自定义函数库 Fn tld"></a>自定义函数库 Fn tld</h1><ol>
-<li>uri: 域名要正确 com.cweioo.crm  -&gt; <a href="http://cweioo.com/crm/后面可以乱写/functions" target="_blank" rel="external">http://cweioo.com/crm/后面可以乱写/functions</a></li>
-<li>functions不能乱写.不可更改</li>
-<li>crm/ 和functions中间可以随便加路径</li>
-<li>放在web-inf下新建的tld文件夹下即可 </li>
-</ol>
-<h2 id="步骤"><a href="#步骤" class="headerlink" title="步骤"></a>步骤</h2><ul>
-<li>复制fn.tld文件过来,改文件名,并只保留一个函数,在上面修改<br><img src="media/14938028885062/Snip20170503_13.png" alt="Snip20170503_13"></li>
-</ul>
-<p><img src="media/14938028885062/14938078635580.jpg" alt=""></p>
-<p><img src="media/14938028885062/14938078931416.jpg" alt=""></p>
-<p><img src="media/14938028885062/14938079057145.jpg" alt=""></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/05/03/jstl-function/" data-id="cj6aksuiu000387y5copf5h25" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-DOM操作" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2017/03/23/DOM操作/" class="article-date">
-  <time datetime="2017-03-23T02:10:35.000Z" itemprop="datePublished">2017-03-23</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="DOM操作"><a href="#DOM操作" class="headerlink" title="DOM操作"></a>DOM操作</h1><h2 id="内部插入"><a href="#内部插入" class="headerlink" title="内部插入"></a>内部插入</h2><ul>
-<li>append(content)</li>
-<li>appendTo(content)</li>
-<li>prepend(content)</li>
-<li>prependTo(content)</li>
-</ul>
-<h2 id="外部插入"><a href="#外部插入" class="headerlink" title="外部插入"></a>外部插入</h2><ul>
-<li>after(content)</li>
-<li>after(function)</li>
-<li>before(content)</li>
-<li>before(function)</li>
-<li>insertBefore(content)</li>
-<li>insertAfter(content)</li>
-</ul>
-<h2 id="删除节点"><a href="#删除节点" class="headerlink" title="删除节点"></a>删除节点</h2><ul>
-<li>empty()</li>
-<li>remove([expr])</li>
-<li>detach([expr])<ul>
-<li>区别: 属性方式绑定的事件,remove方式的没了,datach还在. onclick=”clickMe”</li>
-<li>DOM对象从文档中移除了,还在内存中</li>
-</ul>
-</li>
-</ul>
-<h2 id="clone"><a href="#clone" class="headerlink" title="clone"></a>clone</h2><ul>
-<li>clone</li>
-<li>clone(true)<ul>
-<li>在js中加的事件也会复制过去. <h2 id="插件-spekt"><a href="#插件-spekt" class="headerlink" title="插件 spekt"></a>插件 spekt</h2></li>
-</ul>
-</li>
-</ul>
-<p><img src="media/14902350356312/Snip20170323_18.png" alt="Snip20170323_18"></p>
-<h1 id="异常"><a href="#异常" class="headerlink" title="异常"></a>异常</h1><h2 id="过滤选择没结果"><a href="#过滤选择没结果" class="headerlink" title="过滤选择没结果"></a>过滤选择没结果</h2><ul>
-<li>语法不正确, option 前没有空格.</li>
-</ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">function sel1AddTosel2(src,target) &#123;</div><div class="line">    console.debug($(&quot;#&quot; + target));</div><div class="line">    $(&quot;#&quot;+src + &quot; option:selected&quot;).appendTo($(&quot;#select2&quot;));</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/03/23/DOM操作/" data-id="cj6aksuii000087y5mka8aso1" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-DOM操作-1" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2017/03/23/DOM操作-1/" class="article-date">
-  <time datetime="2017-03-23T02:10:35.000Z" itemprop="datePublished">2017-03-23</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="DOM操作"><a href="#DOM操作" class="headerlink" title="DOM操作"></a>DOM操作</h1><h2 id="内部插入"><a href="#内部插入" class="headerlink" title="内部插入"></a>内部插入</h2><ul>
-<li>append(content)</li>
-<li>appendTo(content)</li>
-<li>prepend(content)</li>
-<li>prependTo(content)</li>
-</ul>
-<h2 id="外部插入"><a href="#外部插入" class="headerlink" title="外部插入"></a>外部插入</h2><ul>
-<li>after(content)</li>
-<li>after(function)</li>
-<li>before(content)</li>
-<li>before(function)</li>
-<li>insertBefore(content)</li>
-<li>insertAfter(content)</li>
-</ul>
-<h2 id="删除节点"><a href="#删除节点" class="headerlink" title="删除节点"></a>删除节点</h2><ul>
-<li>empty()</li>
-<li>remove([expr])</li>
-<li>detach([expr])<ul>
-<li>区别: 属性方式绑定的事件,remove方式的没了,datach还在. onclick=”clickMe”</li>
-<li>DOM对象从文档中移除了,还在内存中</li>
-</ul>
-</li>
-</ul>
-<h2 id="clone"><a href="#clone" class="headerlink" title="clone"></a>clone</h2><ul>
-<li>clone</li>
-<li>clone(true)<ul>
-<li>在js中加的事件也会复制过去. <h2 id="插件-spekt"><a href="#插件-spekt" class="headerlink" title="插件 spekt"></a>插件 spekt</h2></li>
-</ul>
-</li>
-</ul>
-<p><img src="media/14902350356312/Snip20170323_18.png" alt="Snip20170323_18"></p>
-<h1 id="异常"><a href="#异常" class="headerlink" title="异常"></a>异常</h1><h2 id="过滤选择没结果"><a href="#过滤选择没结果" class="headerlink" title="过滤选择没结果"></a>过滤选择没结果</h2><ul>
-<li>语法不正确, option 前没有空格.</li>
-</ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">function sel1AddTosel2(src,target) &#123;</div><div class="line">    console.debug($(&quot;#&quot; + target));</div><div class="line">    $(&quot;#&quot;+src + &quot; option:selected&quot;).appendTo($(&quot;#select2&quot;));</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/03/23/DOM操作-1/" data-id="cj6aksuio000187y5jtvqfxzo" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2017/08/13/hello-world/" data-id="cj6al5mve000192y5987j594w" class="article-share-link">Share</a>
       
       
     </footer>
@@ -320,7 +279,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Archives</h3>
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/08/">August 2017</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/05/">May 2017</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/03/">March 2017</a></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/08/">August 2017</a></li></ul>
     </div>
   </div>
 
@@ -333,23 +292,19 @@
       <ul>
         
           <li>
+            <a href="/2017/08/13/DOM操作/">springboot</a>
+          </li>
+        
+          <li>
+            <a href="/2017/08/13/jstl-function/">springboot</a>
+          </li>
+        
+          <li>
             <a href="/2017/08/13/springboot/">springboot</a>
           </li>
         
           <li>
             <a href="/2017/08/13/hello-world/">Hello World</a>
-          </li>
-        
-          <li>
-            <a href="/2017/05/03/jstl-function/">(no title)</a>
-          </li>
-        
-          <li>
-            <a href="/2017/03/23/DOM操作/">(no title)</a>
-          </li>
-        
-          <li>
-            <a href="/2017/03/23/DOM操作-1/">(no title)</a>
           </li>
         
       </ul>

@@ -5,16 +5,18 @@
   
   <title>springboot | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="ooooooggo">
+  <meta name="description" content="DOM操作内部插入 append(content) appendTo(content) prepend(content) prependTo(content)  外部插入 after(content) after(function) before(content) before(function) insertBefore(content) insertAfter(content)  删除节点 e">
 <meta property="og:type" content="article">
 <meta property="og:title" content="springboot">
-<meta property="og:url" content="http://yoursite.com/2017/08/13/springboot/index.html">
+<meta property="og:url" content="http://yoursite.com/2017/08/13/DOM操作/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="ooooooggo">
-<meta property="og:updated_time" content="2017-08-13T10:10:03.000Z">
+<meta property="og:description" content="DOM操作内部插入 append(content) appendTo(content) prepend(content) prependTo(content)  外部插入 after(content) after(function) before(content) before(function) insertBefore(content) insertAfter(content)  删除节点 e">
+<meta property="og:image" content="http://yoursite.com/2017/08/13/DOM操作/media/14902350356312/Snip20170323_18.png">
+<meta property="og:updated_time" content="2017-08-13T10:25:20.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="springboot">
-<meta name="twitter:description" content="ooooooggo">
+<meta name="twitter:description" content="DOM操作内部插入 append(content) appendTo(content) prepend(content) prependTo(content)  外部插入 after(content) after(function) before(content) before(function) insertBefore(content) insertAfter(content)  删除节点 e">
+<meta name="twitter:image" content="http://yoursite.com/2017/08/13/DOM操作/media/14902350356312/Snip20170323_18.png">
   
     <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -63,9 +65,9 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main"><article id="post-springboot" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-DOM操作" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/2017/08/13/springboot/" class="article-date">
+    <a href="/2017/08/13/DOM操作/" class="article-date">
   <time datetime="2017-08-13T10:04:16.000Z" itemprop="datePublished">2017-08-13</time>
 </a>
     
@@ -85,12 +87,46 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>ooooooggo</p>
+        <h1 id="DOM操作"><a href="#DOM操作" class="headerlink" title="DOM操作"></a>DOM操作</h1><h2 id="内部插入"><a href="#内部插入" class="headerlink" title="内部插入"></a>内部插入</h2><ul>
+<li>append(content)</li>
+<li>appendTo(content)</li>
+<li>prepend(content)</li>
+<li>prependTo(content)</li>
+</ul>
+<h2 id="外部插入"><a href="#外部插入" class="headerlink" title="外部插入"></a>外部插入</h2><ul>
+<li>after(content)</li>
+<li>after(function)</li>
+<li>before(content)</li>
+<li>before(function)</li>
+<li>insertBefore(content)</li>
+<li>insertAfter(content)</li>
+</ul>
+<h2 id="删除节点"><a href="#删除节点" class="headerlink" title="删除节点"></a>删除节点</h2><ul>
+<li>empty()</li>
+<li>remove([expr])</li>
+<li>detach([expr])<ul>
+<li>区别: 属性方式绑定的事件,remove方式的没了,datach还在. onclick=”clickMe”</li>
+<li>DOM对象从文档中移除了,还在内存中</li>
+</ul>
+</li>
+</ul>
+<h2 id="clone"><a href="#clone" class="headerlink" title="clone"></a>clone</h2><ul>
+<li>clone</li>
+<li>clone(true)<ul>
+<li>在js中加的事件也会复制过去. <h2 id="插件-spekt"><a href="#插件-spekt" class="headerlink" title="插件 spekt"></a>插件 spekt</h2></li>
+</ul>
+</li>
+</ul>
+<p><img src="media/14902350356312/Snip20170323_18.png" alt="Snip20170323_18"></p>
+<h1 id="异常"><a href="#异常" class="headerlink" title="异常"></a>异常</h1><h2 id="过滤选择没结果"><a href="#过滤选择没结果" class="headerlink" title="过滤选择没结果"></a>过滤选择没结果</h2><ul>
+<li>语法不正确, option 前没有空格.</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">function sel1AddTosel2(src,target) &#123;</div><div class="line">    console.debug($(&quot;#&quot; + target));</div><div class="line">    $(&quot;#&quot;+src + &quot; option:selected&quot;).appendTo($(&quot;#select2&quot;));</div><div class="line">&#125;</div></pre></td></tr></table></figure>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/08/13/springboot/" data-id="cj6al5mvu000392y5nqktjvsd" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2017/08/13/DOM操作/" data-id="cj6al5mv9000092y5xi7ofcwj" class="article-share-link">Share</a>
       
       
     </footer>
@@ -99,19 +135,10 @@
     
 <nav id="article-nav">
   
-    <a href="/2017/08/13/jstl-function/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Newer</strong>
-      <div class="article-nav-title">
-        
-          springboot
-        
-      </div>
-    </a>
   
-  
-    <a href="/2017/08/13/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
+    <a href="/2017/08/13/jstl-function/" id="article-nav-older" class="article-nav-link-wrap">
       <strong class="article-nav-caption">Older</strong>
-      <div class="article-nav-title">Hello World</div>
+      <div class="article-nav-title">springboot</div>
     </a>
   
 </nav>
